@@ -1,513 +1,884 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Сити Мониторинг</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-  <link rel="stylesheet" href="styles/style.min.css">
-</head>
-<body>
-  <header class="main-header">
-    <div class="main-header__bar container">
-      <img class="main-header__logo" src="images/logo.png" alt="Логотип Сити Мониторинг">
-      <p class="main-header__text">Круглосуточный контроль траспорта в режиме  реального времени</p>
-      <div class="contacts contacts--header">
-        <button class="contacts__title-button  contacts__title-button--header" type="button">Контакты</button>
-        <div class="contacts__container  contacts__container--header">
-          <ul class="contacts__list  contacts__list--header">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:site_name" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <title>Сити Мониторинг</title>
+
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/favicon/favicon.png" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+
+  <body>
+      <div class="main-header__bar ">
+        <div class="container">
+          <img class="main-header__logo" src="images/logo.png" alt="Логотип Сити Мониторинг">
+          <p class="main-header__text">Круглосуточный контроль транспорта в режиме реального времени</p>
+          <div class="contacts contacts--header">
+            <button class="contacts__title-button  contacts__title-button--header" type="button">Контакты</button>
+            <div class="contacts__container  contacts__container--header">
+              <ul class="contacts__list  contacts__list--header">
+                <li class="contacts__item contacts__item--mail">
+                  <span class="contacts__item-title">Почта:</span>
+                  <a class="contacts__link" href="mailto:sales@city-monitoring.ru">sales@city-monitoring.ru</a>
+                </li>
+                <li class="contacts__item contacts__item--city-phone">
+                  <span class="contacts__item-title">Городской:</span>
+                  <a class="contacts__link" href="tel:+74954141122">+7 (495) 414-11-22</a>
+                </li>
+                <li class="contacts__item contacts__item--mobile-phone">
+                  <span class="contacts__item-title">Мобильный:</span>
+                  <a class="contacts__link" href="tel:+79254144676">+7 (925) 414-46-76</a>
+                </li>
+              </ul>
+              <ul class="social  social--header">
+                <li class="social__item  social__item--viber">
+                  <a class="social__link" href="viber://add?number=79254144676">Viber
+                    <img src="images/vb.svg" alt=""></a>
+                </li>
+                <li class="social__item social__item--whatsapp">
+                  <a class="social__link" href="whatsapp://send?phone=79254144676">WhatsApp
+                    <img src="images/wt.svg" alt=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="main-header__content container">
+        <div class="container">
+          <h1 class="main-header__title">Следите за своим автопарком и машинами, сданными в аренду</h1>
+          <p class="main-header__description">Установка оборудования за 1 день. <br> Цены <strong>от 5500 руб.</strong> за авто "под ключ"!</p>
+          <p class="main-header__buttons">
+            <button class="main-header__button-order   button" data-csubj="Первый блок - Начните контролировать свой транспорт уже сегодня!" type="button">Заказать установку</button>
+            <button class="main-header__button-watch" type="button">Посмотреть видео </button>
+          </p>
+          <button class="main-header__link-more" type="button">Узнать больше</button>
+        </div>
+      </section>
+    </header>
+    <main class="main-content">
+      <section id="quotes" class="quotes">
+        <div class="container">
+          <h2 class="quotes__title  title">На каждую проблему найдется решение</h2>
+          <p class="quotes__description  desc">Чем вы занимаетесь?</p>
+          <p class="quotes__tab">
+            <button class="quotes__tab-button  quotes__tab-button--active" data-id="fop" type="button">Я - частное лицо, сдаю машины в аренду</button>
+            <button class="quotes__tab-button" data-id="url" type="button">Я управляю автопарком в организации</button>
+          </p>
+          <div class="quotes__content">
+            <ul id="fop" class="quotes__list  quotes__list--active">
+              <li class="quotes__item">
+                <strong class="quotes__item-title  quotes__item-title--icon-coast">Водитель не платит за аренду</strong>
+                <p>Вы сможете удаленно блокировать свои машины, когда посчитаете нужным.</p>
+                <p>Если заблокируете - машина не заведется!</p>
+              </li>
+              <li class="quotes__item">
+                <strong class="quotes__item-title  quotes__item-title--icon-most">Постоянные штрафы и расходы на ремонт</strong>
+                <p>Теперь вы сможете следить за скоростным режимом своих авто.</p>
+                <p>С проблемными арендаторами вы разорвете договор вовремя и избежите многих проблем.</p>
+              </li>
+              <li class="quotes__item">
+                <strong class="quotes__item-title  quotes__item-title--icon-fencing">Водитель уезжает из рабочей зоны</strong>
+                <p>Вы сможете отметить на карте зоны города и области, дальше которых водителю уезжать не следует.</p>
+                <p>Как только такое произошло - вы получите уведомление об этом.</p>
+              </li>
+              <li class="quotes__item">
+                <strong class="quotes__item-title  quotes__item-title--icon-car">Часто пропускаете плановое техническое обслуживание</strong>
+                <p>Система напомнит вам заранее, когда менять масло, колодки, фильтры и т.д.</p>
+              </li>
+            </ul>
+            <ul id="url" class="quotes__list">
+              <li class="quotes__item">
+                <strong class="quotes__item-title  quotes__item-title--icon-coast">
+                  <img src="images/1.png" alt="">
+                  Сложно контролировать много техники</strong>Мы подключим всю вашу технику в один личный кабинет и вы сможете в online-режиме контролировать перемещение, скорость, а также посещение необходимых объектов.<br><br>Вам будет доступна вся история передвижения в течение 1 года.</li>
+              <li class="quotes__item">
+                <strong class="quotes__item-title  quotes__item-title--icon-most">
+                  <img src="images/2.png" alt="">
+                  Тяжело планировать маршруты</strong>При необходимости вы сможете предоставлять своему заказчику возможность наблюдать за движением автомобиля по маршруту или настроить ретрансляцию данных в систему заказчика.<br></li>
+              <li class="quotes__item">
+                <strong class="quotes__item-title  quotes__item-title--icon-fencing">
+                  <img src="images/3.png" alt="">Проблемы учета рабочего времени</strong>В системе отображаются все простои и реальный пробег автомобиля за смену.<br><br>Вы сможете легко вести учет рабочего времени, сохранять или отправлять отчеты&nbsp;на почту.</li>
+              <li class="quotes__item">
+                <strong class="quotes__item-title  quotes__item-title--icon-car">
+                  <img src="images/4.png" alt="">Часто пропускаете плановое техническое обслуживание</strong>
+                Система напомнит вам заранее, когда менять масло, колодки, фильтры и т.д.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="product-show" id="prdsh">
+        <div class="container">
+          <h2 class="product-show__title  visually-hidden">Видео-презентация продукта</h2>
+          <div class="product-show__description">
+            <p class="product-show__description-title"><b>Контролировать</b> свои машины просто!</p>
+            <p class="product-show__description-desc  desc">Покажем за 4 минуты</p>
+            <div class="product-show__video">
+              <iframe src="https://www.youtube.com/embed/OvfD45COX_M" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="product-show__description-text">Убедитесь сами - контролировать машины теперь легко и удобно!</p>
+            <a id="demo_enter" class="product-show__login-link  button" href="http://geliospro.ru/site/login" target="_blank">Демо-вход в программу</a>
+          </div>
+        </div>
+      </section>
+      <section class="equipment">
+        <div class="container">
+          <h2 class="equipment__title  title">Поставим в ваши машины новое и проверенное оборудование</h2>
+          <p class="equipment__description  desc">Рекомендуем к установке</p>
+          <div id="sliderP" class="product">
+
+            <div class="product__slide">
+              <section class="product__item">
+                <div class="product__header">
+                  <strong class="product__trigger">Рекомендуем</strong>
+                  <figure class="product__figure"><img src="images/products/smart/s2333a/1.png" alt="Смарт S-2333A"></figure>
+                </div>
+                <div class="product__body">
+                  <h3 class="product__title">Смарт S-2420</h3>
+                  <p class="product__price"><b>4 000</b> руб.</p>
+                  <p class="product__description">Лучший вариант для спутникового мониторинга и&nbsp; блокировки автомобиля</p>
+                  <button class="product__button  button" data-id="smart" type="button">Подробнее</button>
+                </div>
+              </section>
+            </div>
+
+            <div class="product__slide">
+              <section class="product__item">
+                <div class="product__header">
+                  <figure class="product__figure"><img src="images/products/avto_fon/alfa/1.png" alt="avto_fon"></figure>
+                </div>
+                <div class="product__body">
+                  <h3 class="product__title">АвтоФон Альфа-маяк</h3>
+                  <p class="product__price"><b>5 400</b> руб.</p>
+                  <p class="product__description">Миниатюрный поисковый маяк рассчитанный на 3 года автономной работы</p>
+                  <button class="product__button  button" data-id="avto_fon" type="button">Подробнее</button>
+                </div>
+              </section>
+            </div>
+
+            <div class="product__slide">
+              <section class="product__item">
+                <div class="product__header">
+                  <figure class="product__figure"><img src="images/products/tlt/t202/1.jpg" alt="Teltonika FMA202"></figure>
+                </div>
+                <div class="product__body">
+                  <h3 class="product__title">Teltonika FMB-202</h3>
+                  <p class="product__price"><b>6 500</b> руб.</p>
+                  <p class="product__description">Терминал подключается в прикуриватель, имеет защиту от пыли и влаги класса IP67</p>
+                  <button class="product__button  button" data-id="teltonika" type="button">Подробнее</button>
+                </div>
+              </section>
+            </div>
+
+            <div class="product__slide">
+              <section class="product__item">
+                <div class="product__header">
+                  <!--                  <strong class="product__trigger">Рекомендуем</strong>-->
+                  <figure class="product__figure">
+                    <img src="images/products/arn/arn3/1.png" alt="img">
+                  </figure>
+                  <!--                  <figure class="product__figure"><img src="images/products/arvani-integral.png" alt="Arnavi Integral 3"></figure>-->
+                </div>
+                <div class="product__body">
+                  <h3 class="product__title">Arnavi Integral 3</h3>
+                  <p class="product__price"><b>5 500</b> руб.</p>
+                  <p class="product__description">Компактный терминал для дистанционного наблюдения за подвижными объектами</p>
+                  <button class="product__button  button" data-id="arvani" type="button">Подробнее</button>
+                  <!--                  <button class="product__button  button" data-fancybox="arnavi" data-src="#arvani">Подробнее</button>-->
+                </div>
+              </section>
+            </div>
+
+          </div>
+          <p class="equipment__arrows"></p>
+          <p class="equipment__help-text">Нажмите на <strong>“Подробнее”</strong>, чтобы узнать больше информации</p>
+          <div class="s-wrap">
+            <p class="about__text">Монтаж терминала с нашим выездом по Москве стоит<strong>1500 рублей</strong></p>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" style="display: none">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы людей, которые уже следят за своими машинами</h2>
+          <div id="sliderR" class="reviews__slider">
+            <div class="reviews__container">
+              <article class="reviews__item">
+                <header class="reviews__header">
+                  <p class="reviews__author">Иван Иванов</p>
+                  <p class="reviews__spec">Арендодатель</p>
+                </header>
+                <p class="reviews__body">
+                  Краткое описание видео, которое предстоит смотреть клиенту, чтобы он мог ознакомиться с его содержанием заранее. Вроде: “Раньше тратил больше, сейчас меньше”.
+                </p>
+                <footer class="reviews__footer">
+                  <button class="reviews__button" type="button">Смотреть видеоотзыв</button>
+                </footer>
+              </article>
+              <img class="reviews__avatar" src="images/users/foto-1.png" alt="Иван Иванов">
+            </div>
+            <div class="reviews__container">
+              <article class="reviews__item">
+                <header class="reviews__header">
+                  <p class="reviews__author">Александр Иванов</p>
+                  <p class="reviews__spec">Гл. механик</p>
+                </header>
+                <p class="reviews__body">
+                  Краткое описание видео, которое предстоит смотреть клиенту, чтобы он мог ознакомиться с его содержанием заранее. Вроде: “Раньше тратил больше, сейчас меньше”.
+                </p>
+                <footer class="reviews__footer">
+                  <button class="reviews__button" type="button">Смотреть видеоотзыв</button>
+                </footer>
+              </article>
+              <img class="reviews__avatar" src="images/users/foto-2.png" alt="Иван Иванов">
+            </div>
+            <div class="reviews__container">
+              <article class="reviews__item">
+                <header class="reviews__header">
+                  <p class="reviews__author">Константин Иванов</p>
+                  <p class="reviews__spec">Арендодатель</p>
+                </header>
+                <p class="reviews__body">
+                  Краткое описание видео, которое предстоит смотреть клиенту, чтобы он мог ознакомиться с его содержанием заранее. Вроде: “Раньше тратил больше, сейчас меньше”.
+                </p>
+                <footer class="reviews__footer">
+                  <button class="reviews__button" type="button">Смотреть видеоотзыв</button>
+                </footer>
+              </article>
+              <img class="reviews__avatar" src="images/users/foto-3.png" alt="Иван Иванов">
+            </div>
+          </div>
+          <p class="reviews__review-button"><button type="button">Оставить <b>свой</b> отзыв</button></p>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title  title">В комплект поставки входит оборудование и программа для слежения за автомобилями</h2>
+          <p class="about__description  desc">СИСТЕМа МОНИТОРИНГА ПОМОЖЕТ ВАМ:</p>
+          <ul class="about__list">
+            <li class="about__item  about__item--icon-way">Отслеживать местоположение автомобиля в online-режиме</li>
+            <li class="about__item  about__item--icon-hand">Дистанционно блокировать транспортное средство в программе или по СМС</li>
+            <li class="about__item  about__item--icon-speed">Контролировать маршруты передвижения, километраж, скоростной режим</li>
+            <li class="about__item  about__item--icon-gadget">Наблюдать за своим автопарком с компьютера, мобильного телефона или планшета, там, где вам удобно</li>
+            <li class="about__item  about__item--icon-file">Формировать отчеты и просматривать архив движения</li>
+            <li class="about__item  about__item--icon-calendar">Составлять график проведения технического обслуживания</li>
+          </ul>
+          <p class="about__text">Абонентское обслуживание по цене <strong>10 рублей в день</strong></p>
+        </div>
+      </section>
+      <section class="with-us">
+        <div class="container">
+          <h2 class="visually-hidden">Начните контролировать свой транспорт уже сегодня!</h2>
+          <div class="with-us__left  form">
+            <strong class="form__title">Начните контролировать свой транспорт уже сегодня!</strong>
+            <p class="form__text">Большинство установок мы делаем в день обращения!</p>
+            <form class="form__form" action="/" method="post">
+              <input type="hidden" name="Тема письма" value="Блок С нами легко - Начните контролировать свой транспорт уже сегодня!">
+              <p class="form__group">
+                <label class="form__label" for="name">Ваше имя</label>
+                <input class="form__input" type="text" name="name" required id="name" placeholder="Алексей">
+              </p>
+              <p class="form__group">
+                <label class="form__label" for="phone">Ваш телефон</label>
+                <input class="form__input" type="tel" name="phone" required id="phone" placeholder="8 (925) 414-46-76">
+              </p>
+              <p class="form__group  form__group--checkbox">
+                <input class="form__input  form__input--checkbox" type="checkbox" name="police-check" required id="policy" checked>
+                <label class="form__label  form__label--checkbox" for="policy">Я согласен на <a href="#police_pop" class="plc_popup">обработку персональных данных</a></label>
+              </p>
+              <button class="form__submit  button" type="submit">Заказать установку</button>
+            </form>
+          </div>
+          <div class="with-us__right">
+            <strong class="with-us__title">С нами легко:</strong>
+            <ul class="with-us__list">
+              <li class="with-us__item">
+                <strong>Шаг 1</strong>
+                <p>Оставьте заявку на сайте или позвоните нам <a href="tel:+74954141122">+7 (495) 414-11-22</a></p>
+              </li>
+              <li class="with-us__item">
+                <strong>Шаг 2</strong>
+                <p>Получите полную консультацию от менеджера, выберите время и место для установки оборудования</p>
+              </li>
+              <li class="with-us__item">
+                <strong>Шаг 3</strong>
+                <p>Мы произведем монтаж и обучим вас управлению системой мониторинга</p>
+              </li>
+            </ul>
+            <button class="with-us__buttonmob  button" data-fancybox data-options='{"touch" : false}' data-src="#wusmob" type="button">Заказать установку</button>
+          </div>
+        </div>
+      </section>
+      <section class="test">
+        <div class="container">
+          <h2 class="visually-hidden">Тест драйв</h2>
+          <figure class="test__figure">
+            <img src="images/car.jpg" alt="Автомобиль">
+            <figcaption><strong>30 дней</strong> за наш счет</figcaption>
+          </figure>
+          <div class="test__body">
+            <p class="test__alt-title">Запишитесь на <b>бесплатный</b> тест-драйв нашей системы <strong>на 30 дней</strong></p>
+            <ul class="test__list">
+              <li class="test__item"><strong>Бесплатно в течение 30 дней</strong></li>
+              <li class="test__item">Техническая поддержка весь тестовый период</li>
+              <li class="test__item">Полный функционал системы</li>
+              <li class="test__item">Персональный менеджер</li>
+            </ul>
+            <button class="test__button  button" data-options='{"touch" : false}' data-fancybox='adf11' data-src="#rec_pil">Записаться на тест-драйв</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    
+    <footer class="main-footer">
+      <div class="container">
+        <div class="contacts contacts--footer">
+          <button class="contacts__title-button  contacts__title-button--footer" type="button">Контакты</button>
+          <ul class="contacts__list  contacts__list--footer">
+            <li class="contacts__item contacts__item--adress">
+              <span class="contacts__item-title">Адрес:</span>
+              г. Москва, ул. Краснодонская, д.25</li>
             <li class="contacts__item contacts__item--mail">
               <span class="contacts__item-title">Почта:</span>
-              <a class="contacts__link" href="mailto:test@mail.com">test@mail.com</a>
+              <a class="contacts__link" href="mailto:sales@city-monitoring.ru">sales@city-monitoring.ru</a>
             </li>
             <li class="contacts__item contacts__item--city-phone">
               <span class="contacts__item-title">Городской:</span>
-              <a class="contacts__link" href="tel:+74993332211">+7 (499) 333-22-11</a>
+              <a class="contacts__link" href="tel:+74954141122">+7 (495) 414-11-22</a>
             </li>
             <li class="contacts__item contacts__item--mobile-phone">
               <span class="contacts__item-title">Мобильный:</span>
-              <a class="contacts__link" href="tel:+74993332211">+7 (499) 333-22-11</a>
-            </li>
-          </ul>
-          <ul class="social  social--header">
-            <li class="social__item  social__item--viber">
-              <a class="social__link" href="viber://add?number=+74993332211">Viber</a>
-            </li>
-            <li class="social__item social__item--whatsapp">
-              <a class="social__link" href="whatsapp://send?phone=+74993332211">WhatsApp</a>
+              <a class="contacts__link" href="tel:+79254144676">+7 (925) 414-46-76</a>
             </li>
           </ul>
         </div>
-      </div>
-      <button class="contacts__call-button  contacts__call-button--header" type="button">Перезвонить мне</button>
-    </div>
-    <section class="main-header__content container">
-      <div class="container">
-        <h1 class="main-header__title">Полный контроль за вашим автопарком и машинами, сданными в аренду</h1>
-        <p class="main-header__description">Установка оборудования за 1 день. <br> Цены <strong>от 4500 руб.</strong> за авто "под ключ"!</p>
-        <p class="main-header__buttons">
-          <button class="main-header__button-order  button" type="button">Заказать установку</button>
-          <button class="main-header__button-watch" type="button">Посмотреть видео</button>
-        </p>
-        <button class="main-header__link-more" type="button">Узнать больше</button>
-      </div>
-    </section>
-  </header>
-  <main class="main-content">
-    <section id="quotes" class="quotes">
-      <div class="container">
-        <h2 class="quotes__title  title">На каждую проблему найдется решение</h2>
-        <p class="quotes__description  desc">Чем вы занимаетесь?</p>
-        <p class="quotes__tab">
-          <button class="quotes__tab-button  quotes__tab-button--active" data-id="fop" type="button">Я - частное лицо, сдающее машины в аренду</button>
-          <button class="quotes__tab-button" data-id="url" type="button">Я управляю автопарком в организации</button>
-        </p>
-        <div class="quotes__content">
-          <ul id="fop" class="quotes__list  quotes__list--active">
-            <li class="quotes__item">
-              <strong class="quotes__item-title  quotes__item-title--icon-coast">Водитель не платит за аренду</strong>
-              <p>Вы сможете удаленно блокировать свои машины когда посчитаете нужным.</p>
-              <p>Если заблокируете - машина не заведется!</p>
-            </li>
-            <li class="quotes__item">
-              <strong class="quotes__item-title  quotes__item-title--icon-most">Постоянные штрафы и расходы на ремонт</strong>
-              <p>Теперь вы сможете следить за скоростным режимом своих авто.</p>
-              <p>С проблемными арендаторами машин вы разорвете договор вовремя и избежите многих проблем.</p>
-            </li>
-            <li class="quotes__item">
-              <strong class="quotes__item-title  quotes__item-title--icon-fencing">Водитель уезжает из рабочей зоны</strong>
-              <p>Вы сможете отметить зоны города и области, дальше которых водителю уезжать не следует.</p>
-              <p>Как только такое произошло - вы получите уведомление об этом.</p>
-            </li>
-            <li class="quotes__item">
-              <strong class="quotes__item-title  quotes__item-title--icon-car">Часто пропускаете плановое ТО</strong>
-              <p>Система напомнит вам заранее, когда менять колодки, фильтры и т.д</p>
-            </li>
-          </ul>
-          <ul id="url" class="quotes__list">
-            <li class="quotes__item">
-              <strong class="quotes__item-title  quotes__item-title--icon-coast">Водитель не платит за аренду</strong>
-              Вы сможете удаленно блокировать свои машины когда посчитаете нужным. <br><br> Если заблокируете - машина не заведется!
-            </li>
-            <li class="quotes__item">
-              <strong class="quotes__item-title  quotes__item-title--icon-most">Постоянные штрафы и расходы на ремонт</strong>
-              Теперь вы сможете следить за скоростным режимом своих авто.<br> С проблемными арендаторами машин вы разорвете договор вовремя и избежите многих проблем.
-            </li>
-            <li class="quotes__item">
-              <strong class="quotes__item-title  quotes__item-title--icon-fencing">Водитель уезжает из рабочей зоны</strong>
-              Вы сможете отметить зоны города и области, дальше которых водителю уезжать не следует. <br><br> Как только такое произошло - вы получите уведомление об этом.
-            </li>
-            <li class="quotes__item">
-              <strong class="quotes__item-title  quotes__item-title--icon-car">Часто пропускаете плановое ТО</strong>
-              Система напомнит вам заранее, когда менять колодки, фильтры и т.д
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="product-show">
-      <div class="container">
-        <h2 class="product-show__title  visually-hidden">Видео-презентация продукта</h2>
-        <div class="product-show__description">
-          <p class="product-show__description-title"><b>Контролировать</b> свои машины просто!</p>
-          <p class="product-show__description-desc  desc">Покажем за 3 минуты</p>
-          <div class="product-show__video">
-            <iframe src="https://www.youtube.com/embed/_SwLg4qw3CY" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <p class="product-show__description-text">Убедитесь сами - контролировать машины теперь легко и удобно!</p>
-          <a class="product-show__login-link  button" href="#">Демо-вход в программу</a>
-        </div>
-      </div>
-    </section>
-    <section class="equipment">
-      <div class="container">
-        <h2 class="equipment__title  title">Поставим в ваши машины новое и проверенное оборудование</h2>
-        <p class="equipment__description  desc">Рекомендуем к установке</p>
-        <div id="sliderP" class="product">
-          <div class="product__slide">
-            <section class="product__item">
-              <div class="product__header">
-                <strong class="product__trigger">Рекомендуем</strong>
-                <figure class="product__figure"><img src="images/products/arvani-integral.png" alt="Arnavi Integral 3"></figure>
-              </div>
-              <div class="product__body">
-                <h3 class="product__title">Arnavi Integral 3</h3>
-                <p class="product__price">от <b>25 000</b> руб.</p>
-                <p class="product__description">Краткое предложение о системе, програмном обеспечении</p>
-                <button class="product__button  button" data-id="arvani" type="button">Подробнее</button>
-              </div>
-            </section>
-          </div>
-          <div class="product__slide">
-            <section class="product__item">
-              <div class="product__header">
-                <figure class="product__figure"><img src="images/products/teltonika-FMA202.png" alt="Teltonika FMA202"></figure>
-              </div>
-              <div class="product__body">
-                <h3 class="product__title">Teltonika FMA202</h3>
-                <p class="product__price">от <b>25 000</b> руб.</p>
-                <p class="product__description">Краткое предложение о системе, програмном обеспечении</p>
-                <button class="product__button  button" data-id="teltonika" type="button">Подробнее</button>
-              </div>
-            </section>
-          </div>
-          <div class="product__slide">
-            <section class="product__item">
-              <div class="product__header">
-                <figure class="product__figure"><img src="images/products/AMD007.png" alt="AMD 007"></figure>
-              </div>
-              <div class="product__body">
-                <h3 class="product__title">AMD 007</h3>
-                <p class="product__price">от <b>25 000</b> руб.</p>
-                <p class="product__description">Краткое предложение о системе, програмном обеспечении</p>
-                <button class="product__button  button" data-id="amd" type="button">Подробнее</button>
-              </div>
-            </section>
-          </div>
-          <div class="product__slide">
-            <section class="product__item">
-              <div class="product__header">
-                <figure class="product__figure"><img src="images/products/signal-S-2551.png" alt="Сигнал S-2551"></figure>
-              </div>
-              <div class="product__body">
-                <h3 class="product__title">Сигнал S-2551</h3>
-                <p class="product__price">от <b>25 000</b> руб.</p>
-                <p class="product__description">Краткое предложение о системе, програмном обеспечении</p>
-                <button class="product__button  button" data-id="signal" type="button">Подробнее</button>
-              </div>
-            </section>
-          </div>
-        </div>
-        <p class="equipment__arrows"></p>
-        <p class="equipment__help-text">Нажмите на <strong>“Подробнее”</strong>, чтобы увидеть модели брендов</p>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="container">
-        <h2 class="reviews__title">Отзывы людей, которые уже следят за своими машинами</h2>
-        <div id="sliderR" class="reviews__slider">
-          <div class="reviews__container">
-            <article class="reviews__item">
-              <header class="reviews__header">
-                <p class="reviews__author">Иван Иванов</p>
-                <p class="reviews__spec">Арендодатель</p>
-              </header>
-              <p class="reviews__body">
-                Краткое описание видео, которое предстоит смотреть клиенту, чтобы он мог ознакомиться с его содержанием заранее. Вроде: “Раньше тратил больше, сейчас меньше”.
-              </p>
-              <footer class="reviews__footer">
-                <button class="reviews__button" type="button">Смотреть видеоотзыв</button>
-              </footer>
-            </article>
-            <img class="reviews__avatar" src="images/users/foto-1.png" alt="Иван Иванов">
-          </div>
-          <div class="reviews__container">
-            <article class="reviews__item">
-              <header class="reviews__header">
-                <p class="reviews__author">Александр Иванов</p>
-                <p class="reviews__spec">Гл. механик</p>
-              </header>
-              <p class="reviews__body">
-                Краткое описание видео, которое предстоит смотреть клиенту, чтобы он мог ознакомиться с его содержанием заранее. Вроде: “Раньше тратил больше, сейчас меньше”.
-              </p>
-              <footer class="reviews__footer">
-                <button class="reviews__button" type="button">Смотреть видеоотзыв</button>
-              </footer>
-            </article>
-            <img class="reviews__avatar" src="images/users/foto-2.png" alt="Иван Иванов">
-          </div>
-          <div class="reviews__container">
-            <article class="reviews__item">
-              <header class="reviews__header">
-                <p class="reviews__author">Константин Иванов</p>
-                <p class="reviews__spec">Арендодатель</p>
-              </header>
-              <p class="reviews__body">
-                Краткое описание видео, которое предстоит смотреть клиенту, чтобы он мог ознакомиться с его содержанием заранее. Вроде: “Раньше тратил больше, сейчас меньше”.
-              </p>
-              <footer class="reviews__footer">
-                <button class="reviews__button" type="button">Смотреть видеоотзыв</button>
-              </footer>
-            </article>
-            <img class="reviews__avatar" src="images/users/foto-3.png" alt="Иван Иванов">
-          </div>
-        </div>
-        <p class="reviews__review-button"><button type="button">Оставить <b>свой</b> отзыв</button></p>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container">
-        <h2 class="about__title  title">В комплект поставки входит оборудование и программа для слежения за автомобилями</h2>
-        <p class="about__description  desc">С нашей системой мониторинга вы сможете:</p>
-        <ul class="about__list">
-          <li class="about__item  about__item--icon-way">Отслеживать местоположение в online-режиме</li>
-          <li class="about__item  about__item--icon-hand">Дистанционно блокировать транспортное средство в программе или по СМС</li>
-          <li class="about__item  about__item--icon-gadget">Наблюдать за своим автопарком с компьютера, мобильного телефона или планшета, там, где вам удобно</li>
-          <li class="about__item  about__item--icon-file">Формировать отчеты и просматривать архив движения</li>
-          <li class="about__item  about__item--icon-speed">Контролировать маршруты передвижения, километраж, скоростной режим</li>
-          <li class="about__item  about__item--icon-calendar">Составлять график проведения технического обслуживания</li>
-        </ul>
-        <p class="about__text">Абонентское обслуживание по цене <strong>10 рублей в день</strong></p>
-      </div>
-    </section>
-    <section class="with-us">
-      <div class="container">
-        <h2 class="visually-hidden">Начните контролировать свой транспорт уже сегодня!</h2>
-        <div class="with-us__left  form">
-          <strong class="form__title">Начните контролировать свой транспорт уже сегодня!</strong>
-          <p class="form__text">Большинство установок мы делаем в день обращения!</p>
-          <form class="form__form" action="/" method="post">
-            <p class="form__group">
-              <label class="form__label" for="name">Ваше имя</label>
-              <input class="form__input" type="text" name="name" id="name" placeholder="Константин Константинопольский">
-            </p>
-            <p class="form__group">
-              <label class="form__label" for="phone">Ваш телефон</label>
-              <input class="form__input" type="tel" name="phone" id="phone" placeholder="8 957 592 26 54">
-            </p>
-            <p class="form__group  form__group--checkbox">
-              <input class="form__input  form__input--checkbox" type="checkbox" id="policy" checked>
-              <label class="form__label  form__label--checkbox" for="policy">Я согласен на <a href="#">обработку персональных данных</a></label>
-            </p>
-            <button class="form__submit  button" type="submit">Заказать установку</button>
-          </form>
-        </div>
-        <div class="with-us__right">
-          <strong class="with-us__title">С нами легко:</strong>
-          <ul class="with-us__list">
-            <li class="with-us__item">
-              <strong>Шаг 1</strong>
-              <p>Оставьте заявку на сайте или позвоните нам <a href="tel:+74993332211">+7 (499) 333-22-11</a></p>
-            </li>
-            <li class="with-us__item">
-              <strong>Шаг 2</strong>
-              <p>Мы произведем монтаж и обучим вас управлению системой мониторинга</p>
-            </li>
-            <li class="with-us__item">
-              <strong>Шаг 3</strong>
-              <p>Мы произведем монтаж и обучим вас управлению системой мониторинга</p>
-            </li>
-          </ul>
-          <button class="with-us__button  button" type="button">Заказать установку</button>
-        </div>
-      </div>
-    </section>
-    <section class="test">
-      <div class="container">
-        <h2 class="visually-hidden">Тест драйв</h2>
-        <figure class="test__figure">
-          <img src="images/car.jpg" alt="Автомобиль">
-          <figcaption><strong>30 дней</strong> за наш счет</figcaption>
-        </figure>
-        <div class="test__body">
-          <p class="test__alt-title">Запишитесь на <b>бесплатный</b> тест-драйв нашей системы <strong>на 30 дней</strong></p>
-          <ul class="test__list">
-            <li class="test__item"><strong>Бесплатно в течение 30 дней</strong>, с момента подключения</li>
-            <li class="test__item">Техническая поддержка весь тестовый период</li>
-            <li class="test__item">Полный функционал системы</li>
-            <li class="test__item">Персональный менеджер</li>
-          </ul>
-          <button class="test__button  button">Записаться на тест-драйв</button>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <div class="container">
-      <div class="contacts contacts--footer">
-        <button class="contacts__title-button  contacts__title-button--footer" type="button">Контакты</button>
-        <ul class="contacts__list  contacts__list--footer">
-          <li class="contacts__item contacts__item--adress">
-            <span class="contacts__item-title">Адрес:</span>
-            г. Москва, ул. Сущевский вал, д.14, оф. 24
+        <ul class="social  social--footer">
+          <li class="social__item  social__item--viber">
+            <a class="social__link" href="viber://add?number=74954141122">Viber
+              <img src="images/vb.svg" alt=""></a>
           </li>
-          <li class="contacts__item contacts__item--mail">
-            <span class="contacts__item-title">Почта:</span>
-            <a class="contacts__link" href="mailto:test@mail.com">test@mail.com</a>
-          </li>
-          <li class="contacts__item contacts__item--city-phone">
-            <span class="contacts__item-title">Городской:</span>
-            <a class="contacts__link" href="tel:+74993332211">+7 (499) 333-22-11</a>
-          </li>
-          <li class="contacts__item contacts__item--mobile-phone">
-            <span class="contacts__item-title">Мобильный:</span>
-            <a class="contacts__link" href="tel:+74993332211">+7 (499) 333-22-11</a>
+          <li class="social__item social__item--whatsapp">
+            <a class="social__link" href="whatsapp://send?phone=74954141122">WhatsApp
+              <img src="images/wt.svg" alt=""></a>
           </li>
         </ul>
       </div>
-      <ul class="social  social--footer">
-        <li class="social__item  social__item--viber">
-          <a class="social__link" href="viber://add?number=+74993332211">Viber</a>
-        </li>
-        <li class="social__item social__item--whatsapp">
-          <a class="social__link" href="whatsapp://send?phone=+74993332211">WhatsApp</a>
-        </li>
-      </ul>
-      <button class="contacts__call-button  contacts__call-button--footer" type="button">Перезвонить мне</button>
-    </div>
-  </footer>
-  <div class="modal">
-    <section class="modal__form  form">
-      <button class="modal__close-button" type="button"><span>Закрыть</span></button>
-      <h2 class="form__title">Начните контролировать свой транспорт уже сегодня!</h2>
-      <p class="form__text">Большинство установок мы делаем в день обращения!</p>
-      <form class="form__form" action="/" method="post">
-        <p class="form__group">
-          <label class="form__label" for="mName">Ваше имя</label>
-          <input class="form__input" type="text" name="name" id="mName" placeholder="Константин Константинопольский">
-        </p>
-        <p class="form__group">
-          <label class="form__label" for="m-phone">Ваш телефон</label>
-          <input class="form__input" type="tel" name="phone" id="m-phone" placeholder="8 957 592 26 54">
-        </p>
-        <p class="form__group  form__group--checkbox">
-          <input class="form__input  form__input--checkbox" type="checkbox" id="m-policy" checked>
-          <label class="form__label  form__label--checkbox" for="m-policy">Я согласен на <a href="#">обработку персональных данных</a></label>
-        </p>
-        <input class="form__input-hidden" type="hidden" name="title" value="">
-        <button class="form__submit  button" type="submit">Заказать установку</button>
-     </form>
-    </section>
-    <section class="modal__product m-product">
-      <button class="modal__close-button" type="button"><span>Закрыть</span></button>
-      <div id="arvani" class="m-product__prod">
+    </footer>
+    
+     
+     <div class="modal">
+      <section class="modal__form  form">
+        <button class="modal__close-button" type="button"><span>Закрыть</span></button>
+        <h2 class="form__title">Начните контролировать свой транспорт уже сегодня!</h2>
+        <p class="form__text">Большинство установок мы делаем в день обращения!</p>
+        <form class="form__form" action="/" method="post">
+          <input type="hidden" name="Тема письма" value="Первый блок - Начните контролировать свой транспорт уже сегодня!">
+          <p class="form__group">
+            <label class="form__label" for="mName">Ваше имя</label>
+            <input class="form__input" type="text" name="name" required id="mName" placeholder="Алексей">
+          </p>
+          <p class="form__group">
+            <label class="form__label" for="m-phone">Ваш телефон</label>
+            <input class="form__input" type="tel" name="phone" required id="m-phone" placeholder="8 (925) 414-46-76">
+          </p>
+          <p class="form__group  form__group--checkbox">
+            <input class="form__input  form__input--checkbox" type="checkbox" name="police-cke" required id="m-policy" checked>
+            <label class="form__label  form__label--checkbox" for="m-policy">Я согласен на <a href="#police_pop" class="plc_popup">обработку персональных данных</a></label>
+          </p>
+          <!--          <input class="form__input-hidden" type="hidden" name="title" value="">-->
+          <!--          <button class="form__submit  button" type="submit" onclick="gtag('event', 'click', { 'event_category': 'form' });">Заказать установку</button>-->
+          <button class="form__submit  button" type="submit">Заказать установку</button>
+        </form>
+      </section>
+      <section class="modal__product m-product">
+        <button class="modal__close-button" type="button"><span>Закрыть</span></button>
+
+
+
+        <div id="arvani" class="m-product__prod">
           <div class="m-product__gallery">
-              <div class="m-product__gallery-cont m-product__gallery-cont--active arnavi-interal-5">
-                  <strong class="m-product__trigger">Рекомендуем</strong>
-                  <figure class="m-product__figure"></figure>
-                  <ul class="m-product__list">
-                      <li class="m-product__item  m-product__item--active"><img src="images/products/Arnavi5.png" alt="Arnavi5"></li>
-                      <li class="m-product__item"><img src="images/products/Arnavi53.png" alt="Arnavi53"></li>
-                      <li class="m-product__item"><img src="images/products/Arnavi52.png" alt="Arnavi52"></li>
-                  </ul>
-              </div>
-              <div class="m-product__gallery-cont arnavi-4">
-                  <strong class="m-product__trigger">Рекомендуем</strong>
-                  <figure class="m-product__figure"></figure>
-                  <ul class="m-product__list">
-                      <li class="m-product__item  m-product__item--active"><img src="images/products/Arnavi5.png" alt="Arnavi5"></li>
-                      <li class="m-product__item"><img src="images/products/Arnavi53.png" alt="Arnavi53"></li>
-                      <li class="m-product__item"><img src="images/products/Arnavi52.png" alt="Arnavi52"></li>
-                  </ul>
-              </div>
-              <button class="m-product__order  m-product__order--gallery  button" type="button">Заказать оборудование</button>
+            <div class="m-product__gallery-cont m-product__gallery-cont--active arnavi-interal-5">
+              <!--              <strong class="m-product__trigger">Рекомендуем</strong>-->
+              <figure class="m-product__figure"><img src="images/products/arn/arn3/2.jpg" alt="Arnavi Integral 3"></figure>
+              <ul class="m-product__list">
+                <!--                <li class="m-product__item  m-product__item--active"><img src="images/products/arn/arn3/1.png" alt="Arnavi Integral 3"></li>-->
+                <li class="m-product__item m-product__item--active"><img src="images/products/arn/arn3/2.jpg" alt="Arnavi Integral 3"></li>
+                <li class="m-product__item"><img src="images/products/arn/arn3/3.jpg" alt="Arnavi Integral 3"></li>
+                <li class="m-product__item"><img src="images/products/arn/arn3/4.jpg" alt="Arnavi Integral 3"></li>
+              </ul>
+            </div>
+            <div class="m-product__gallery-cont arnavi-4">
+              <!--              <strong class="m-product__trigger">Рекомендуем</strong>-->
+              <figure class="m-product__figure"><img src="images/products/arn/arn5/1.png" alt="Arnavi 5"></figure>
+              <ul class="m-product__list">
+                <li class="m-product__item  m-product__item--active"><img src="images/products/arn/arn5/1.png" alt="Arnavi 5"></li>
+                <li class="m-product__item"><img src="images/products/arn/arn5/2.png" alt="Arnavi 5"></li>
+              </ul>
+            </div>
+            <button class="m-product__order  m-product__order--gallery  button" type="button">Заказать оборудование</button>
           </div>
           <div class="m-product__body">
-              <div class="m-product__body-cont m-product__body-cont--active arnavi-interal-5">
-                  <h2 class="m-product__title">Arnavi Integral 5</h2>
-                  <p class="m-product__price"><b>5 500</b> руб.</p>
-                  <ul class="m-product__th">
-                      <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 70 х 53 х 22 мм</li>
-                      <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 60 г</li>
-                      <li class="m-product__th-item"><strong>Ёмкост АКБ</strong> - 800 мА/ч</li>
-                      <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
-                      <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
-                  </ul>
-                  <p class="m-product__description">GLONASS/GPS трекер ARNAVI INTEGRAL-2 предназначен для дистанционного наблюдения за подвижными объектами. Позволяет контролировать в онлайн-режиме местонахождение, маршрут, скорость, пробег, время работы двигателя. <br><br> К устройству можно подключать дополнительные датчики и реле блокировки стартера/иммобилайзера. Доступна функция обновления встроенного программного обеспечения без демонтажа с объекта и без необходимости непосредственного доступа к устройству (по каналу GSM).</p>
-                  <button class="m-product__more-btn" type="button">Читать полностью</button>
-                  <p class="m-product__docs">
-                      <a href="#" target="_blank">Сертификат ГОСТ.pdf</a>
-                      <a href="#" target="_blank">Декларация о соответствии.pdf</a>
-                  </p>
-              </div>
-              <div class="m-product__body-cont arnavi-4">
-                  <h2 class="m-product__title">Arnavi 4</h2>
-                  <p class="m-product__price"><b>4 500</b> руб.</p>
-                  <ul class="m-product__th">
-                      <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 70 х 53 х 22 мм</li>
-                      <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 60 г</li>
-                      <li class="m-product__th-item"><strong>Ёмкост АКБ</strong> - 800 мА/ч</li>
-                      <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
-                      <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
-                  </ul>
-                  <p class="m-product__description">GLONASS/GPS трекер ARNAVI INTEGRAL-2 предназначен для дистанционного наблюдения за подвижными объектами. Позволяет контролировать в онлайн-режиме местонахождение, маршрут, скорость, пробег, время работы двигателя. <br><br> К устройству можно подключать дополнительные датчики и реле блокировки стартера/иммобилайзера. Доступна функция обновления встроенного программного обеспечения без демонтажа с объекта и без необходимости непосредственного доступа к устройству (по каналу GSM).</p>
-                  <button class="m-product__more-btn" type="button">Читать полностью</button>
-                  <p class="m-product__docs">
-                      <a href="#" target="_blank">Сертификат ГОСТ.pdf</a>
-                      <a href="#" target="_blank">Декларация о соответствии.pdf</a>
-                  </p>
-              </div>
-              <p class="m-product__tab">
-                  <strong class="m-product__tab-title">Другие виды Arnavi:</strong>
-                  <button class="m-product__tab-btn  m-product__tab-btn--active" type="button" data-class="arnavi-interal-5">Arnavi Integral 5</button>
-                  <button class="m-product__tab-btn" type="button" data-class="arnavi-4">Arnavi-4</button>
+            <div class="m-product__body-cont m-product__body-cont--active arnavi-interal-5">
+              <h2 class="m-product__title">Arnavi Integral 3</h2>
+              <p class="m-product__price"><b>5 500</b> руб.</p>
+              <ul class="m-product__th">
+                <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 70 х 53 х 22 мм</li>
+                <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 60 г</li>
+                <li class="m-product__th-item"><strong>Ёмкость АКБ</strong> - 250 мА/ч</li>
+                <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
+                <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
+              </ul>
+              <p class="m-product__description">ГЛОНАСС/GPS трекер ARNAVI INTEGRAL 3 предназначен для дистанционного наблюдения за подвижными объектами. Позволяет контролировать в онлайн-режиме местонахождение, маршрут, скорость, пробег и время работы двигателя. <br><br> К устройству можно подключать дополнительные датчики и реле блокировки стартера/иммобилайзера. Не требует демонтажа с автомобиля для обновления программного обеспечения (по каналу GSM).</p>
+              <button class="m-product__more-btn" type="button">Читать полностью</button>
+              <p class="m-product__docs">
+                <a href="images/products/arn/arn3/gost.pdf" target="_blank">Сертификат соответствия.pdf</a>
+                <a href="images/products/arn/arn3/dek.pdf" target="_blank">Декларация о соответствии.pdf</a>
               </p>
-              <button class="m-product__order  button" type="button">Заказать оборудование</button>
+            </div>
+            <div class="m-product__body-cont arnavi-4">
+              <h2 class="m-product__title">Arnavi 5</h2>
+              <p class="m-product__price"><b>8 000</b> руб.</p>
+              <ul class="m-product__th">
+                <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 74 х 69 х 22 мм</li>
+                <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 250 г</li>
+                <li class="m-product__th-item"><strong>Ёмкость АКБ</strong> - 800 мА/ч</li>
+                <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
+                <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
+              </ul>
+              <p class="m-product__description">ГЛОНАСС/GPS трекер ARNAVI 5 предназначен для дистанционного наблюдения за подвижными объектами. Позволяет контролировать в онлайн-режиме местонахождение, маршрут, скорость, пробег, время работы двигателя. К устройству можно подключать дополнительные датчики и реле блокировки стартера/иммобилайзера. Трекер имеет встроенный CAN-модуль, что позволяет подключаться к бортовому компьютеру различной техники.<br><br>Терминал не требует демонтажа с автомобиля для обновления программного обеспечения (по каналу GSM).</p>
+              <button class="m-product__more-btn" type="button">Читать полностью</button>
+              <p class="m-product__docs">
+                <a href="images/products/arn/arn5/gost.pdf" target="_blank">Сертификат соответствия.pdf</a>
+                <a href="images/products/arn/arn5/dek.pdf" target="_blank">Декларация о соответствии.pdf</a>
+              </p>
+            </div>
+            <p class="m-product__tab">
+              <strong class="m-product__tab-title">Другие виды Arnavi:</strong>
+              <button class="m-product__tab-btn  m-product__tab-btn--active" type="button" data-class="arnavi-interal-5">Arnavi Integral 3</button>
+              <button class="m-product__tab-btn" type="button" data-class="arnavi-4">Arnavi 5</button>
+            </p>
+            <button class="m-product__order  button" type="button">Заказать оборудование</button>
           </div>
-      </div>
-      <div id="teltonika" class="m-product__prod">
-            <div class="m-product__gallery">
-                <div class="m-product__gallery-cont m-product__gallery-cont--active  arnavi-interal-5">
-                    <strong class="m-product__trigger">Рекомендуем</strong>
-                    <figure class="m-product__figure"></figure>
-                    <ul class="m-product__list">
-                        <li class="m-product__item  m-product__item--active"><img src="images/products/Arnavi5.png" alt="Arnavi5"></li>
-                        <li class="m-product__item"><img src="images/products/Arnavi53.png" alt="Arnavi53"></li>
-                        <li class="m-product__item"><img src="images/products/Arnavi52.png" alt="Arnavi52"></li>
-                    </ul>
-                </div>
-                <div class="m-product__gallery-cont arnavi-4">
-                    <strong class="m-product__trigger">Рекомендуем</strong>
-                    <figure class="m-product__figure"></figure>
-                    <ul class="m-product__list">
-                        <li class="m-product__item  m-product__item--active"><img src="images/products/Arnavi5.png" alt="Arnavi5"></li>
-                        <li class="m-product__item"><img src="images/products/Arnavi53.png" alt="Arnavi53"></li>
-                        <li class="m-product__item"><img src="images/products/Arnavi52.png" alt="Arnavi52"></li>
-                    </ul>
-                </div>
-                <button class="m-product__order  m-product__order--gallery  button" type="button">Заказать оборудование</button>
-            </div>
-            <div class="m-product__body">
-                <div class="m-product__body-cont m-product__body-cont--active arnavi-interal-5">
-                    <h2 class="m-product__title">Arnavi Integral 5</h2>
-                    <p class="m-product__price"><b>5 500</b> руб.</p>
-                    <ul class="m-product__th">
-                        <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 70 х 53 х 22 мм</li>
-                        <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 60 г</li>
-                        <li class="m-product__th-item"><strong>Ёмкост АКБ</strong> - 800 мА/ч</li>
-                        <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
-                        <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
-                    </ul>
-                    <p class="m-product__description">GLONASS/GPS трекер ARNAVI INTEGRAL-2 предназначен для дистанционного наблюдения за подвижными объектами. Позволяет контролировать в онлайн-режиме местонахождение, маршрут, скорость, пробег, время работы двигателя. <br><br> К устройству можно подключать дополнительные датчики и реле блокировки стартера/иммобилайзера. Доступна функция обновления встроенного программного обеспечения без демонтажа с объекта и без необходимости непосредственного доступа к устройству (по каналу GSM).</p>
-                    <button class="m-product__more-btn" type="button">Читать полностью</button>
-                    <p class="m-product__docs">
-                        <a href="#" target="_blank">Сертификат ГОСТ.pdf</a>
-                        <a href="#" target="_blank">Декларация о соответствии.pdf</a>
-                    </p>
-                </div>
-                <div class="m-product__body-cont arnavi-4">
-                    <h2 class="m-product__title">Arnavi Integral 4</h2>
-                    <p class="m-product__price"><b>4 500</b> руб.</p>
-                    <ul class="m-product__th">
-                        <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 70 х 53 х 22 мм</li>
-                        <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 60 г</li>
-                        <li class="m-product__th-item"><strong>Ёмкост АКБ</strong> - 800 мА/ч</li>
-                        <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
-                        <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
-                    </ul>
-                    <p class="m-product__description">GLONASS/GPS трекер ARNAVI INTEGRAL-2 предназначен для дистанционного наблюдения за подвижными объектами. Позволяет контролировать в онлайн-режиме местонахождение, маршрут, скорость, пробег, время работы двигателя. <br><br> К устройству можно подключать дополнительные датчики и реле блокировки стартера/иммобилайзера. Доступна функция обновления встроенного программного обеспечения без демонтажа с объекта и без необходимости непосредственного доступа к устройству (по каналу GSM).</p>
-                    <button class="m-product__more-btn" type="button">Читать полностью</button>
-                    <p class="m-product__docs">
-                        <a href="#" target="_blank">Сертификат ГОСТ.pdf</a>
-                        <a href="#" target="_blank">Декларация о соответствии.pdf</a>
-                    </p>
-                </div>
-                <p class="m-product__tab">
-                    <strong class="m-product__tab-title">Другие виды Arnavi:</strong>
-                    <button class="m-product__tab-btn  m-product__tab-btn--active" type="button" data-class="arnavi-interal-5">Arnavi Integral 5</button>
-                    <button class="m-product__tab-btn" type="button" data-class="arnavi-4">Arnavi-4</button>
-                </p>
-                <button class="m-product__order  button" type="button">Заказать оборудование</button>
-            </div>
         </div>
-    </section>
-    <div class="overlay"></div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-  <script src="scripts/script.js"></script>
-</body>
+
+
+
+        <div id="teltonika" class="m-product__prod">
+          <div class="m-product__gallery">
+            <div class="m-product__gallery-cont m-product__gallery-cont--active  arnavi-interal-5">
+              <!--              <strong class="m-product__trigger">Рекомендуем</strong>-->
+              <figure class="m-product__figure"><img src="images/products/tlt/t202/1.jpg" alt="Teltonika FMA-202"></figure>
+              <ul class="m-product__list">
+                <li class="m-product__item  m-product__item--active"><img src="images/products/tlt/t202/1.jpg" alt="Teltonika FMA-202"></li>
+                <li class="m-product__item"><img src="images/products/tlt/t202/2.jpg" alt="Teltonika FMA-202"></li>
+              </ul>
+            </div>
+            <div class="m-product__gallery-cont arnavi-4">
+              <!--              <strong class="m-product__trigger">Рекомендуем</strong>-->
+              <figure class="m-product__figure"><img src="images/products/tlt/t900/1.jpg" alt="Teltonika FMB-900"></figure>
+              <ul class="m-product__list">
+                <li class="m-product__item  m-product__item--active"><img src="images/products/tlt/t900/1.jpg" alt="Teltonika FMB-900"></li>
+                <li class="m-product__item"><img src="images/products/tlt/t900/2.jpg" alt="Teltonika FMB-900"></li>
+                <li class="m-product__item"><img src="images/products/tlt/t900/3.png" alt="Teltonika FMB-900"></li>
+              </ul>
+            </div>
+            <div class="m-product__gallery-cont arnavi-3">
+              <!--              <strong class="m-product__trigger">Рекомендуем</strong>-->
+              <figure class="m-product__figure"><img src="images/products/tlt/t250/1.jpg" alt="Teltonika TMT-250"></figure>
+              <ul class="m-product__list">
+                <li class="m-product__item  m-product__item--active"><img src="images/products/tlt/t250/1.jpg" alt="Teltonika TMT-250"></li>
+                <!--                <li class="m-product__item"><img src="images/products/tlt/t250/1.jpg" alt="Teltonika TMT-250"></li>-->
+                <li class="m-product__item"><img src="images/products/tlt/t250/2.jpg" alt="Teltonika TMT-250"></li>
+                <!--                <li class="m-product__item"><img src="images/products/tlt/t250/3.jpg" alt="Teltonika TMT-250"></li>-->
+                <li class="m-product__item"><img src="images/products/tlt/t250/4.png" alt="Teltonika TMT-250"></li>
+              </ul>
+            </div>
+            <button class="m-product__order  m-product__order--gallery  button" type="button">Заказать оборудование</button>
+          </div>
+          <div class="m-product__body">
+            <div class="m-product__body-cont m-product__body-cont--active arnavi-interal-5">
+              <h2 class="m-product__title">Teltonika FMB-202</h2>
+              <p class="m-product__price"><b>6 500</b> руб.</p>
+              <ul class="m-product__th">
+                <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 72,5 х 73 х 27,3 мм</li>
+                <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 250 г</li>
+                <li class="m-product__th-item"><strong>Ёмкость АКБ</strong> - 400 мА/ч</li>
+                <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
+                <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
+              </ul>
+              <p class="m-product__description">ГЛОНАСС/GPS трекер Teltonika FMB-202 имеет пылезащитный и влагонепроницаемый корпус (класс защиты IP67), что позволяет спокойно устанавливать трекер не только на автомобили, но и на водный транспорт и мотоцикл.&nbsp;<br><br>Возможность контролировать в онлайн-режиме местонахождение, маршрут, скорость, пробег, время работы двигателя. Не требует специальной установки - подключается в прикуриватель.</p>
+              <button class="m-product__more-btn" type="button">Читать полностью</button>
+              <p class="m-product__docs">
+                <!--                <a href="#" target="_blank">Сертификат ГОСТ.pdf</a>-->
+                <a href="images/products/tlt/t202/dek.pdf" target="_blank">Декларация о соответствии.pdf</a>
+              </p>
+            </div>
+            <div class="m-product__body-cont arnavi-4">
+              <h2 class="m-product__title">Teltonika FMB-900</h2>
+              <p class="m-product__price"><b>4 000</b> руб.</p>
+              <ul class="m-product__th">
+                <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 79 х 54 х 12 мм</li>
+                <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 50 г</li>
+                <li class="m-product__th-item"><strong>Ёмкость АКБ</strong> - нет</li>
+                <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
+                <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
+              </ul>
+              <p class="m-product__description">ГЛОНАСС/GPS трекер Teltonika FMB-900 компактный и умный трекер с поддержкой Bluetooth, предназначен для трекинга в режиме реального времени. Позволяет контролировать местонахождение, маршрут, скорость, пробег, время работы двигателя.<br><br>Есть возможность установки SD-карты. Не требует демонтажа с автомобиля для обновления программного обеспечения (по каналу GSM).</p>
+              <button class="m-product__more-btn" type="button">Читать полностью</button>
+              <p class="m-product__docs">
+                <!--                <a href="images/products/telt_202/" target="_blank">Сертификат ГОСТ.pdf</a>-->
+                <a href="images/products/tlt/t900/dek.pdf" target="_blank">Декларация о соответствии.pdf</a>
+              </p>
+            </div>
+            <div class="m-product__body-cont arnavi-3">
+              <h2 class="m-product__title">Teltonika TMT-250</h2>
+              <p class="m-product__price"><b>7 500</b> руб.</p>
+              <ul class="m-product__th">
+                <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 44 х 43 х 20 мм</li>
+                <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 40 г</li>
+                <li class="m-product__th-item"><strong>Ёмкость АКБ</strong> - 800 мА/ч</li>
+                <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
+                <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
+              </ul>
+              <p class="m-product__description"> ГЛОНАСС/GPS трекер Teltonika TMT-250 - автономный персональный трекер предназначен для людей, домашних животных, мониторинга автомобилей и контроля персонала.<br><br>Водонепроницаемый корпус защиты класса IP67 обеспечивает внешнее использование в суровых условиях, причем большая емкость аккумулятора расширяет диапазон применения, где требуется длительный срок службы батареи. Поддерживает громкую связь, обновление прошивки и конфигурации через Bluetooth. Функция обнаружения падения и тревожная кнопка помогут спасти жизнь в случае аварии или чрезвычайной ситуации.</p>
+              <button class="m-product__more-btn" type="button">Читать полностью</button>
+              <p class="m-product__docs">
+                <!--                <a href="images/products/telt_202/" target="_blank">Сертификат ГОСТ.pdf</a>-->
+                <a href="images/products/tlt/t250/dek.pdf" target="_blank">Декларация о соответствии.pdf</a>
+              </p>
+            </div>
+            <p class="m-product__tab">
+              <strong class="m-product__tab-title">Другие виды Teltonika:</strong>
+              <button class="m-product__tab-btn  m-product__tab-btn--active" type="button" data-class="arnavi-interal-5">Teltonika FMB-202</button>
+              <button class="m-product__tab-btn" type="button" data-class="arnavi-4">Teltonika FMB-900</button>
+              <button class="m-product__tab-btn" type="button" data-class="arnavi-3">Teltonika TMT-250</button>
+            </p>
+            <button class="m-product__order  button" type="button">Заказать оборудование</button>
+          </div>
+        </div>
+
+
+
+        <div id="avto_fon" class="m-product__prod">
+          <div class="m-product__gallery">
+            <div class="m-product__gallery-cont m-product__gallery-cont--active  avtofon_alfa">
+              <!--              <strong class="m-product__trigger">Рекомендуем</strong>-->
+              <figure class="m-product__figure"><img src="images/products/avto_fon/alfa/1.png" alt="Альфа-Маяк"></figure>
+              <ul class="m-product__list">
+                <li class="m-product__item  m-product__item--active"><img src="images/products/avto_fon/alfa/1.png" alt="Альфа-Маяк"></li>
+                <li class="m-product__item  m-product__item--active"><img src="images/products/avto_fon/alfa/2.png" alt="Альфа-Маяк"></li>
+                <li class="m-product__item  m-product__item--active"><img src="images/products/avto_fon/alfa/3.jpg" alt="Альфа-Маяк"></li>
+                <li class="m-product__item  m-product__item--active"><img src="images/products/avto_fon/alfa/4.png" alt="Альфа-Маяк"></li>
+                <li class="m-product__item  m-product__item--active"><img src="images/products/avto_fon/alfa/5.jpg" alt="Альфа-Маяк"></li>
+              </ul>
+            </div>
+
+            <div class="m-product__gallery-cont avtofon_alfa_2xl">
+              <!--              <strong class="m-product__trigger">Рекомендуем</strong>-->
+              <figure class="m-product__figure"><img src="images/products/avto_fon/2xl/1.png" alt="Альфа-Маяк 2XL"></figure>
+              <ul class="m-product__list">
+                <li class="m-product__item  m-product__item--active"><img src="images/products/avto_fon/2xl/1.png" alt="Альфа-Маяк 2XL"></li>
+                <li class="m-product__item  m-product__item--active"><img src="images/products/avto_fon/2xl/2.jpg" alt="Альфа-Маяк 2XL"></li>
+                <li class="m-product__item  m-product__item--active"><img src="images/products/avto_fon/2xl/3.png" alt="Альфа-Маяк 2XL"></li>
+                <li class="m-product__item  m-product__item--active"><img src="images/products/avto_fon/2xl/4.png" alt="Альфа-Маяк 2XL"></li>
+                <li class="m-product__item  m-product__item--active"><img src="images/products/avto_fon/2xl/5.jpg" alt="Альфа-Маяк 2XL"></li>
+              </ul>
+            </div>
+
+            <button class="m-product__order  m-product__order--gallery  button" type="button">Заказать оборудование</button>
+          </div>
+          <div class="m-product__body">
+            <div class="m-product__body-cont m-product__body-cont--active avtofon_alfa">
+              <h2 class="m-product__title">АвтоФон Альфа-Маяк</h2>
+              <p class="m-product__price"><b>5 400</b> руб.</p>
+              <ul class="m-product__th">
+                <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> -&nbsp;59 х 38 х 20 мм</li>
+                <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 40 г</li>
+                <li class="m-product__th-item"><strong>Ёмкость АКБ</strong> - 1100 мА/ч</li>
+                <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
+                <li class="m-product__th-item"><strong>Не требует пополнения баланса</strong> - да</li>
+              </ul>
+              <p class="m-product__description">АвтоФон Альфа-Маяк передает координаты охраняемого объекта с заданной частотой. Миниатюрные размеры корпуса сравнимы с размерами спичечного коробка. При выходе Альфа-маяка на связь 1 раз в сутки, заряда батареи хватает на 3 года автономной работы.
+
+                Вам не нужно пополнять баланс SIM-чипа маяка, т.к. он рассчитан на весь срок службы устройства.
+
+                <br><br>Для вас доступна бесплатная круглосуточная услуга ДЦ "Автофон-Реагирование", которая поможет владельцу в случаях угона автомобиля.</p>
+              <button class="m-product__more-btn" type="button">Читать полностью</button>
+              <p class="m-product__docs">
+                <a href="images/products/avto_fon/alfa/short_inst.pdf" target="_blank">Краткая инструкция Альфа-маяк.pdf</a>
+                <a href="images/products/avto_fon/alfa/full_inst.pdf" target="_blank">Полная инструкция Альфа-маяк.pdf</a>
+              </p>
+            </div>
+            <div class="m-product__body-cont avtofon_alfa_2xl">
+              <h2 class="m-product__title">АвтоФон Альфа-Маяк 2XL</h2>
+              <p class="m-product__price"><b>5 400</b> руб.</p>
+              <ul class="m-product__th">
+                <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> -&nbsp;79 х 28 х 55 мм</li>
+                <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 98 г</li>
+                <li class="m-product__th-item"><strong>Ёмкость АКБ</strong> - 3500 мА/ч</li>
+                <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
+                <li class="m-product__th-item"><strong>Не требует пополнения баланса</strong> - да</li>
+              </ul>
+              <p class="m-product__description">АвтоФон Альфа-Маяк 2XL передает координаты охраняемого объекта с заданной частотой. Компактные размеры герметичного корпуса сравнимы с размерами пачки сигарет. При выходе маяка на связь 1 раз в сутки, заряда батареи хватает на 6 лет автономной работы. Батарея увеличенной емкости работает при температуре от -35 до +80 ℃.
+
+                Вам не нужно пополнять баланс SIM-чипа маяка, т.к. он рассчитан на весь срок службы устройства.<br><br></p>
+              <button class="m-product__more-btn" type="button">Читать полностью</button>
+              <p class="m-product__docs">
+                <a href="images/products/avto_fon/2xl/short_inst.pdf" target="_blank">Краткая инструкция 2XL</a>
+                <a href="images/products/avto_fon/2xl/full_inst.pdf" target="_blank">Полная инструкция 2XL.pdf</a>
+              </p>
+            </div>
+            <p class="m-product__tab">
+              <strong class="m-product__tab-title">Другие виды Альфа-Маяков:</strong>
+              <button class="m-product__tab-btn  m-product__tab-btn--active" type="button" data-class="avtofon_alfa">Альфа-Маяк</button>
+              <button class="m-product__tab-btn" type="button" data-class="avtofon_alfa_2xl">Альфа-Маяк 2XL</button>
+              <!--              <button class="m-product__tab-btn" type="button" data-class="arnavi-4">убрать вкладку</button>-->
+            </p>
+            <button class="m-product__order  button" type="button">Заказать оборудование</button>
+          </div>
+        </div>
+
+        <div id="smart" class="m-product__prod">
+          <div class="m-product__gallery">
+
+
+            <div class="m-product__gallery-cont m-product__gallery-cont--active  s-2333A">
+              <strong class="m-product__trigger">Рекомендуем</strong>
+              <figure class="m-product__figure"><img src="images/products/smart/s2333a/1.png" alt="Смарт S-2333A"></figure>
+              <ul class="m-product__list">
+                <li class="m-product__item  m-product__item--active"><img src="images/products/smart/s2333a/1.png" alt="Смарт S-2333A"></li>
+                <li class="m-product__item"><img src="images/products/smart/s2333a/2.png" alt="Смарт S-2333A"></li>
+                <li class="m-product__item"><img src="images/products/smart/s2333a/3.jpg" alt="Смарт S-2333A"></li>
+              </ul>
+            </div>
+
+
+
+
+            <div class="m-product__gallery-cont s2430">
+              <!--              <strong class="m-product__trigger">Рекомендуем</strong>-->
+              <figure class="m-product__figure"><img src="images/products/smart/s2430/1.jpg" alt="Смарт-2430"></figure>
+              <ul class="m-product__list">
+
+                <li class="m-product__item  m-product__item--active">
+                  <img src="images/products/smart/s2430/1.jpg" alt="Смарт-2430">
+                </li>
+                <li class="m-product__item">
+                  <img src="images/products/smart/s2430/2.jpg" alt="Смарт-2430">
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="m-product__gallery-cont s-2551">
+              <!--              <strong class="m-product__trigger">Рекомендуем</strong>-->
+              <figure class="m-product__figure"><img src="images/products/signal/s2551/1.jpg" alt="Сигнал S-2551"></figure>
+              <ul class="m-product__list">
+                <li class="m-product__item  m-product__item--active"><img src="images/products/signal/s2551/1.jpg" alt="Сигнал S-2551"></li>
+                <li class="m-product__item"><img src="images/products/signal/s2551/2.jpg" alt="Сигнал S-2551"></li>
+                <li class="m-product__item"><img src="images/products/signal/s2551/3.png" alt="Сигнал S-2551"></li>
+              </ul>
+            </div>
+
+
+            <button class="m-product__order  m-product__order--gallery  button" type="button">Заказать оборудование</button>
+          </div>
+          <div class="m-product__body">
+
+
+            <div class="m-product__body-cont m-product__body-cont--active s-2333A">
+              <h2 class="m-product__title">Смарт S-2420</h2>
+              <p class="m-product__price"><b>4 000</b> руб.</p>
+              <ul class="m-product__th">
+                <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 102 х 57 х 22 мм</li>
+                <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 75 г</li>
+                <li class="m-product__th-item"><strong>Ёмкость АКБ</strong> - нет</li>
+                <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
+                <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
+              </ul>
+              <p class="m-product__description">ГЛОНАСС/GPS&nbsp;трекер Смарт S-2420 предназначен для дистанционного наблюдения за подвижными объектами. Позволяет контролировать в онлайн-режиме местонахождение, маршрут, скорость, пробег, время работы двигателя. К устройству можно подключить реле для блокировки автомобиля.&nbsp;<br><br><span style="letter-spacing: 0.14px;">Смарт S-2420 имеет долговременную защиту по питанию и защиту входных линий до 200 В. Устройство также имеет функцию Bluetooth, что открывает возможность для использования беспроводной гарнитуры для связи с водителем.</span></p>
+              <button class="m-product__more-btn" type="button">Читать полностью</button>
+              <p class="m-product__docs">
+                <a href="images/products/smart/s2333a/sert.jpg" target="_blank">Сертификат соответствия</a>
+                <a href="images/products/smart/s2333a/dec.jpg" target="_blank">Декларация о соответствии</a>
+              </p>
+            </div>
+
+
+            <div class="m-product__body-cont  s2430">
+              <h2 class="m-product__title">Смарт-2333A</h2>
+              <p class="m-product__price"><b>5 000</b> руб.</p>
+              <ul class="m-product__th">
+                <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> -&nbsp;102 х 57 х 22 мм</li>
+                <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 97 г</li>
+                <li class="m-product__th-item"><strong>Ёмкость АКБ</strong> -&nbsp;850 мА/ч</li>
+                <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
+                <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
+              </ul>
+              <p class="m-product__description">ГЛОНАСС/GPS трекер Смарт S-2333A предназначен для дистанционного наблюдения за подвижными объектами. Позволяет контролировать в онлайн-режиме местонахождение, маршрут, скорость и направление движения.&nbsp;К устройству можно подключать датчики уровня топлива, датчики работы механизмов и реле блокировки автомобиля.&nbsp;<br><br>Простое и недорогое решение со всем необходимым функционалом для осуществления качественного мониторинга транспорта. Особенностью данного терминала является увеличенная ёмкость АКБ, что позволяет работать без внешнего питания на протяжении 6 часов!</p>
+              <button class="m-product__more-btn" type="button">Читать полностью</button>
+              <p class="m-product__docs">
+                <a href="images/products/smart/s2430/sert.jpg" target="_blank">Сертификат соответствия</a>
+                <a href="images/products/smart/s2430/dec.jpg" target="_blank">Декларация о соответствии</a>
+              </p>
+            </div>
+
+
+
+            <div class="m-product__body-cont s-2551">
+              <h2 class="m-product__title">Сигнал S-2551</h2>
+              <p class="m-product__price"><b>6 900</b> руб.</p>
+              <ul class="m-product__th">
+                <li class="m-product__th-item"><strong>Размеры (без учета крепления)</strong> - 105 х 78 х 20,5 мм</li>
+                <li class="m-product__th-item"><strong>Масса (без учета жгута)</strong> - 105 г</li>
+                <li class="m-product__th-item"><strong>Ёмкость АКБ</strong> - 1200 мА/ч</li>
+                <li class="m-product__th-item"><strong>Антенны</strong> - встроенные</li>
+                <li class="m-product__th-item"><strong>Наличие черного ящика</strong> - да</li>
+              </ul>
+              <p class="m-product__description">ГЛОНАСС/GPS&nbsp;трекер Сигнал S-2551 предназначен для дистанционного наблюдения за подвижными объектами. Позволяет контролировать в онлайн-режиме местонахождение, маршрут, скорость, пробег, время работы двигателя. К устройству можно подключать дополнительные датчики и реле блокировки стартера/иммобилайзера. Есть возможность установки 2 SIM-карт и SD-карты.&nbsp;<br><br><span style="letter-spacing: 0.14px;">Полностью соответствует требованиям приказа №285 Министерства транспорта Российской Федерации.&nbsp;Возможно подключение микрофона и динамика для установления громкой связи с водителем или микрофонного прослушивания.</span></p>
+              <button class="m-product__more-btn" type="button">Читать полностью</button>
+              <p class="m-product__docs">
+                <a href="images/products/signal/s2551/gost.jpg" target="_blank">Сертификат соответствия.pdf</a>
+                <a href="images/products/signal/s2551/dek.jpg" target="_blank">Декларация о соответствии.pdf</a>
+              </p>
+            </div>
+
+
+
+            <p class="m-product__tab">
+              <strong class="m-product__tab-title"></strong>
+
+              <button class="m-product__tab-btn  m-product__tab-btn--active" type="button" data-class="s-2333A">Смарт S-2420</button>
+
+              <button class="m-product__tab-btn" type="button" data-class="s2430">Смарт-2333A</button>
+
+              <button class="m-product__tab-btn" type="button" data-class="s-2551">Сигнал S-2551</button>
+
+            </p>
+            <button class="m-product__order  button" type="button">Заказать оборудование</button>
+          </div>
+        </div>
+
+
+
+      </section>
+
+
+
+
+      <div class="overlay"></div>
+    </div>
+
+
+    <div class="hidden">
+
+
+      <section class="modal__form  form" id="wusmob">
+        <!--        <button class="modal__close-button" type="button"><span>Закрыть</span></button>-->
+        <h2 class="form__title">Начните контролировать свой транспорт уже сегодня!</h2>
+        <p class="form__text">Большинство установок мы делаем в день обращения!</p>
+        <form class="form__form" action="/" method="post">
+          <input type="hidden" name="Тема письма" value="С нами легко - Начните контролировать свой транспорт уже сегодня!">
+          <p class="form__group">
+            <label class="form__label" for="mName">Ваше имя</label>
+            <input class="form__input" type="text" name="name" required id="mName" placeholder="Алексей">
+          </p>
+          <p class="form__group">
+            <label class="form__label" for="m-phone">Ваш телефон</label>
+            <input class="form__input" type="tel" name="phone" required id="m-phone" placeholder="8 (925) 414-46-76">
+          </p>
+          <p class="form__group  form__group--checkbox">
+            <input class="form__input  form__input--checkbox" type="checkbox" name="police-cke" required id="m-policy" checked>
+            <label class="form__label  form__label--checkbox" for="m-policy">Я согласен на <a href="#police_pop" class="plc_popup">обработку персональных данных</a></label>
+          </p>
+          <!--          <input class="form__input-hidden" type="hidden" name="title" value="">-->
+          <button class="form__submit  button" type="submit">Заказать установку</button>
+        </form>
+      </section>
+
+
+
+      <div class="with-us__left  form" id="rec_pil">
+        <strong class="form__title">Запишитесь на бесплатный тест-драйв </strong>
+        <p class="form__text">на 30 дней</p>
+        <form class="form__form" action="/" method="post" novalidate="novalidate">
+          <input type="hidden" name="Тема письма" value="Запишитесь на бесплатный тест-драйв">
+          <p class="form__group">
+            <label class="form__label" for="name">Ваше имя</label>
+            <input class="form__input" type="text" name="name" required="" id="name" placeholder="Алексей">
+          </p>
+          <p class="form__group">
+            <label class="form__label" for="phone">Ваш телефон</label>
+            <input class="form__input" type="tel" name="phone" required="" id="phone" placeholder="8 (925) 414-46-76">
+          </p>
+          <p class="form__group  form__group--checkbox">
+            <input class="form__input  form__input--checkbox" type="checkbox" name="police-check" required="" id="policy" checked="">
+            <label class="form__label  form__label--checkbox" for="policy">Я согласен на <a href="#police_pop" class="plc_popup">обработку персональных данных</a></label>
+          </p>
+          <button class="form__submit  button" type="submit">Заказать установку</button>
+        </form>
+      </div>
+
+
+      <div class="police-block" id="police_pop">
+        <div class="offset-bottom-x2">
+          <h2 class="h2">Политика конфиденциальности</h2>
+          <p>Администрация данной посадочной страницы (далее Landing Page) обязуется не передавать, не продавать и не раскрывать информацию, предоставленную пользователем (далее Пользователь) при регистрации и использовании функций сайта третьим лицам, кроме случаев, описанных законодательством страны, на территории которой Пользователь ведет свою деятельность.</p>
+        </div>
+        <div class="offset-bottom-x2">
+          <h3>Анонимная информация</h3>
+          <p>Для контроля персональной информации в Landing Page реализованы механизмы верификации личных данных посетителей. Landing Page отслеживает активность посетителей сайта с помощью IP-адресов и создает временные cookie-файлы для проверки сеансов пользователей.</p>
+          <p>Эти данные помогают нам узнать количество посетителей и способствуют динамичности нашего сайта. Информация никаким образом не связана с вашей персональной информацией (именем, адресом и т.д.). Она не раскрывает личность пользователя. Ответственность за предоставление недостоверных данных полностью лежит на Пользователе.</p>
+        </div>
+        <div class="offset-bottom-x2">
+          <h3>Регистрационная информация</h3>
+          <p>Если посетитель сайта заполняет регистрационную форму, указанная в ней информация будет использоваться только для связи с Landing Page. Никто, кроме владельца сайта или уполномоченных им представителей, не имеет доступа к Вашей персональной информации.</p>
+        </div>
+        <div class="offset-bottom-x2">
+          <h3>Политика конфиденциальности третьих сторон</h3>
+          <p>Помните, что другие веб-сайты, к которым Вы можете обращаться через наш сайт, могут собирать персональную информацию о Вас. Настоящая политика конфиденциальности не распространяется на принятые такими сторонними веб-сайтами правила обращения с информацией.</p>
+        </div>
+        <div class="offset-bottom-x2">
+          <h3>Безопасность</h3>
+          <p>Landing Page обеспечивает безопасность учетной записи Пользователя от несанкционированного доступа.</p>
+        </div>
+        <div class="offset-bottom-x2">
+          <h3>Хранение персональных данных</h3>
+          <p>Персональные данные пользователей хранятся в электронном виде в информационной системе персональных данных. Порядок архивирования и сроки хранения баз данных информационной системы персональных данных бессрочно.</p>
+        </div>
+      </div>
+      <div class="thanks" id="thanks">
+        <div class="h1">
+          Спасибо за заявку !
+        </div>
+        <p>
+          Мы свяжемся с Вами в ближайшее время
+        </p>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_ru.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
