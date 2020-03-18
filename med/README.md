@@ -1,2 +1,0 @@
-# evmajoar.github.io
-Pages
