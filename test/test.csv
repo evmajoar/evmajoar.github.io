@@ -1,0 +1,39 @@
+Дата парсинга,Дата создания клиента,Номер клиента,Имя клиента,Фамилия,Отчество,Год рождения,Месяц рождения,День рождения,Паспорт,Место рождения,Город проживания,Фактический адрес,Район,СНИЛС,ИНН ФЛ,АВТО(if exist),Траты ежемесячно,"Фин,тип клиента",Недвижимость далее,Последняя активность,Ипотека,budget,Obj_main,Obj_1(if exist),Obj_2(if exist),Obj_3(if exist),type_1,type_2(if exist)
+
+42447,18.08.2014,8921 080****,Андрей,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Василеостровская,Blocked info,Blocked info,Blocked info,Blocked info,b_4,,17.03.2020,Нет,9000000,"ЖК ""Квартал Галактика""","ЖК ""Галактика Премиум""","ЖК ""Первый квартал""",,2r,3r
+
+42447,23.02.2019,8911 230****,Вячеслав,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Калининский,Blocked info,Blocked info,Blocked info,Blocked info,b_2,,42443,Да,5000000,"ЖК ""YOGA""","ЖК ""Полис на Комендантском""","ЖК ""Ultra City II""",1r,St
+
+42447,21.05.2016,8905 822****,Вероника,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Невский,Blocked info,Blocked info,Blocked info,Blocked info,a_3,42446,Да,6000000,"ЖК ""Квартал Галактика""","ЖК ""Галактика Премиум""","ЖК ""Московские ворота""",1r
+
+42447,04.04.2016,8905 208****,Лариса,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Фрунзенский,Blocked info,Blocked info,Blocked info,Blocked info,a_8,,17.03.2020,Да,10500000,"ЖК ""Квартал Галактика""","ЖК ""Первый квартал""","ЖК ""Б57""","ЖК ""Галактика Премиум""",3s
+
+42447,15.02.2018,8981 152****,Яна,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Василеостровский,Blocked info,Blocked info,Blocked info,Blocked info,c_6,,42447,Нет,4500000,"ЖК ""Ariosto!""","ЖК ""Чистое небо""","ЖК ""Ultra City II""","ЖК ""Полис на Комендантском""",St,1r
+
+42447,07.05.2014,8951 249****,Алла,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Москва,Blocked info,Басманный ,Blocked info,Blocked info,Blocked info,Blocked info,a_5,42443,Нет,6000000,"ЖК ""Квартал Галактика""","ЖК ""Галактика Pro""","ЖК ""Первый квартал""",1r
+
+42447,16.11.2019,8909 124****,Валерий,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Выборгский,Blocked info,Blocked info,Blocked info,Blocked info,b_6,,42446,Да,5500000,"ЖК ""Квартал Галактика""","ЖК ""Галактика Премиум""",St,1r
+
+42447,20.03.2018,8952 172****,Светлана,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Московский,Blocked info,Blocked info,Blocked info,Blocked info,b_5,,42446,Нет,10000000,"ЖК ""Квартал Галактика""","ЖК ""Первый квартал""","ЖК ""Статус у Парка Победы""",2r,3s
+
+42447,14.02.2019,8921 592****,Варвара,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Москва,Blocked info,Матушкино,Blocked info,Blocked info,Blocked info,Blocked info,a_4,42447,Да,13500000,"ЖК ""Черная речка""","ЖК ""Ultra City II""","ЖК ""Legenda на Комендантском 58""",3r
+
+42447,03.12.2015,8931 517****,Ирина,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Адиралтейский,Blocked info,Blocked info,Blocked info,Blocked info,b_8,,42447,Да,10500000,"ЖК ""Квартал Галактика""","ЖК ""Галактика Премиум""","ЖК ""Галактика Pro""",,3r,
+42447,19.06.2017,8904 292****,Игорь,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Фрунзенский,Blocked info,Blocked info,Blocked info,Blocked info,a_3,,42447,Нет,4500000,"ЖК ""Полис на Комендантском""","ЖК ""Ultra City II""","ЖК ""YOGA""","ЖК ""Ariosto!""",1r
+
+42447,23.04.2019,8921 748****,Лариса,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Москва,Blocked info,Щукино,Blocked info,Blocked info,Blocked info,Blocked info,a_8,,42447,Да,5000000,"ЖК ""Квартал Галактика""","ЖК ""Первый квартал""","ЖК ""Второй квартал""","ЖК ""Галактика Премиум""",1r,1s
+
+42447,21.03.2015,8963 441****,Валентина,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Невский,Blocked info,Blocked info,Blocked info,Blocked info,a_2,,42444,Да,8000000,"ЖК ""Legenda на Комендантском 58""","ЖК ""Черная речка""",2r
+
+42447,12.02.2020,8929 654****,Владимир,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Московский,Blocked info,Blocked info,Blocked info,Blocked info,a_1,,42446,Да,11500000,"ЖК ""Питер""","ЖК ""Квартал Галактика""",3r
+
+42447,14.08.2018,8905 249****,Илья,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Москва,Blocked info,Бирюлёво Восточное,Blocked info,Blocked info,Blocked info,Blocked info,c_2,,42447,Да,6000000,"ЖК ""Квартал Галактика""","ЖК ""Статус у Парка Победы""","ЖК ""Галактика Премиум""",,1r,
+42447,17.03.2019,8911 043****,Василий,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Невский,Blocked info,Blocked info,Blocked info,Blocked info,b_8,,42446,Нет,5500000,"ЖК ""Legenda на Комендантском 58""","ЖК ""Legenda Героев""","ЖК ""LEGENDA Business на Московском 65""",1r
+
+42447,29.03.2016,8960 341****,Людмила,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Московский,Blocked info,Blocked info,Blocked info,Blocked info,b_8,,42445,Да,6000000,"ЖК ""Квартал Галактика""","ЖК ""Галактика Премиум""",1r
+
+42447,14.11.2017,8963 843****,Никита,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Владивосток,Blocked info,Советский,Blocked info,Blocked info,Blocked info,Blocked info,a_4,,42447,Да,6000000,"ЖК ""Квартал Галактика""","ЖК ""Первый квартал""","ЖК ""Галактика Премиум""",1r
+
+42447,11.02.2019,8921 174****,Иван,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Москва,Blocked info,Зюзино,Blocked info,Blocked info,Blocked info,Blocked info,a_9,,42447,Нет,11000000,"ЖК ""Черная речка""","ЖК ""Legenda на Комендантском 58""",3r
+
+42447,14.10.2019,8931 512****,Анна,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Blocked info,Санкт-Петербург,Blocked info,Московский,Blocked info,Blocked info,Blocked info,Blocked info,c_2,,42447,Да,5000000,"ЖК ""Ultra City II""","ЖК ""Ariosto!""","ЖК ""Полис на Комендантском""","ЖК ""YOGA""",St,1r
